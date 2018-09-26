@@ -44,7 +44,7 @@
      <?php   
       }
     ?>
-    <form action="<?= base_url('index.php/user/register')?>" method="post">
+    <form action="<?= base_url('user/register')?>" method="post">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" placeholder="Full name" name="name">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -81,7 +81,7 @@
         Google+</a>
     </div>
 
-    <a href="<?= base_url('index.php/user')?>" class="text-center">I already have a membership</a>
+    <a href="<?= base_url('user')?>" class="text-center">I already have a membership</a>
   </div>
   <!-- /.form-box -->
 </div>

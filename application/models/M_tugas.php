@@ -27,7 +27,7 @@ class M_tugas extends CI_Model {
 				'tugas'		=> $this->input->post('tugas'),
 				'deadline'	=> $this->input->post('deadline'),
 			);
-
+ 
 		$edit = $this->db->where('id_tugas',$id)
 						 ->update('tugas',$data);
 		if($edit){

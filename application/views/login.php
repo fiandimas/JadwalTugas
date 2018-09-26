@@ -52,11 +52,11 @@
      <?php
         }
      ?>
-    <form action="<?= base_url('index.php/user/login')?>" method="post">
+    <form action="<?= base_url('user/login')?>" method="post">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" placeholder="Username" name="username">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-      </div>
+      </div> 
       <div class="form-group has-feedback">
         <input type="password" class="form-control" placeholder="Password" name="password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
@@ -86,8 +86,8 @@
     </div>
     <!-- /.social-auth-links -->
 
-    <a href="<?= base_url('index.php/user/loadForgot')?>">I forgot my password</a><br>
-    <a href="<?= base_url('index.php/user/load_register')?>" class="text-center">Register a new membership</a>
+    <a href="<?= base_url('user/loadForgot')?>">I forgot my password</a><br>
+    <a href="<?= base_url('user/load_register')?>" class="text-center">Register a new membership</a>
 
   </div>
   <!-- /.login-box-body -->

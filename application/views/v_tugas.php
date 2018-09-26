@@ -25,9 +25,9 @@
 			<td><strike><?= $data->deadline?></strike></td>
 			<td><strike><?= $data->status?></strike></td>
 			<td>
-				<button class="btn btn-success"><a href="<?= base_url('index.php/tugas/asDone/'.$data->id_tugas)?>">Tandai Selesai</a></button>
+				<button class="btn btn-success"><a href="<?= base_url('tugas/asDone/'.$data->id_tugas)?>">Tandai Selesai</a></button>
 				<button class="btn btn-warning"><a href="">Edit</a></button> 
-				<button class="btn btn-danger"><a href="<?= base_url('index.php/tugas/deleteTugas/'.$data->id_tugas)?>" onclick="return confirm('Apakah anda yakin menghapus Pesanan?')">Hapus</a></button>
+				<button class="btn btn-danger"><a href="<?= base_url('tugas/deleteTugas/'.$data->id_tugas)?>" onclick="return confirm('Apakah anda yakin menghapus Pesanan?')">Hapus</a></button>
 			</td>
 		</tr>
 		<?php
@@ -41,9 +41,9 @@
 			<td><?= $data->deadline?></td>
 			<td><?= $data->status?></td>
 			<td>
-				<button class="btn btn-success"><a href="<?= base_url('index.php/tugas/asDone/'.$data->id_tugas)?>" onclick="return confirm('Apakah anda yakin menandai sudah selesai ?')">Tandai Selesai</a></button> 
+				<button class="btn btn-success"><a href="<?= base_url('tugas/asDone/'.$data->id_tugas)?>" onclick="return confirm('Apakah anda yakin menandai sudah selesai ?')">Tandai Selesai</a></button> 
 				<button class="btn btn-warning"><a href="#myModal<?=$data->id_tugas?>" data-toggle="modal">Edit</a></button> 
-				<button class="btn btn-danger"><a href="<?= base_url('index.php/tugas/deleteTugas/'.$data->id_tugas)?>" onclick="return confirm('Apakah anda yakin menghapus tugas ?')">Hapus</a></button></td>
+				<button class="btn btn-danger"><a href="<?= base_url('tugas/deleteTugas/'.$data->id_tugas)?>" onclick="return confirm('Apakah anda yakin menghapus tugas ?')">Hapus</a></button></td>
 		</tr>
 
 		<?php			
@@ -60,7 +60,7 @@
         <h4 class="modal-title">Tambah Tugas</h4>
       </div>
       <div class="modal-body">
-       <form action="<?=base_url('index.php/tugas/addTugas')?>" method="post">
+       <form action="<?=base_url('tugas/addTugas')?>" method="post">
       	<table>
           <tr>
           	<td>Nama Mapel</td>
@@ -104,7 +104,7 @@
         	<h4 class="modal-title" id="myModalLabel">Edit Tugas</h4>
       	</div>
       	<div class="modal-body">
-       		<form method="post" action="<?= base_url('index.php/tugas/editTugas/'.$no->id_tugas)?>">
+       		<form method="post" action="<?= base_url('tugas/editTugas/'.$no->id_tugas)?>">
        			<table>
 			        <tr>
 			          	<td>Nama Mapel</td>

@@ -28,30 +28,34 @@ class M_user extends CI_Model {
 
 	 public function userLogin()
 	 {
-	 	$login = $this->db->where('username', $this->input->post('username'))
-	 			 		  ->where('password', $this->input->post('password'))
-	 					  ->get('users')
-	 					  ->num_rows();
+	 	$user = $this->db->where('username', $this->input->post('username'))
+	 					  ->get('users')  
+	 					  ->row();
 
-	 	$session = $this->db->where('username', $this->input->post('username'))
-	 			 		    ->where('password', $this->input->post('password'))
-	 					    ->get('users')
-	 					    ->row();
-
-	 	if($login > 0){
-	 		$data = array(
-	 			'id_user' => $session->id_user,
-	 			'name'	  => $session->name,
-	 			'login'	  => TRUE
-	 		);				    
-	 		$this->session->set_userdata($data);
-	 		redirect('tugas','refresh');
-	 	}
-	 	else{
+	 	if(!$user){
 	 		$this->session->set_flashdata('gagal', 'Username tidak terdaftar, silahkan mendaftar ');
 	 		redirect('user','refresh');
 	 	}
-	 					    				  
+
+	 	$pass = $this->db->where('password',$user->password)
+	 					 ->get('users')
+	 					 ->row();
+
+	 	if(md5($pass->password) == md5($this->input->post('password'))){
+	 		$data = array(
+	 			'id_user' => $user->id_user,
+	 			'name'	  => $user->name,
+	 			'login'	  => TRUE
+	 		);
+	 		$this->session->set_userdata($data);
+	 		redirect('tugas','refresh');
+	 	}
+
+	 	
+	 	else{
+	 		$this->session->set_flashdata('gagal', 'Password Incorect ');
+	 		redirect('user','refresh');
+	 	}			    				  
 	 }
 
 	 public function getPassword()

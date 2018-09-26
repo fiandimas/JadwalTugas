@@ -106,7 +106,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?= base_url('index.php/user/userLogout')?>" class="btn btn-default btn-flat">Sign out</a> 
+                  <a href="<?= base_url('user/userLogout')?>" class="btn btn-default btn-flat">Sign out</a> 
                 </div>
               </li>
             </ul>
@@ -145,9 +145,9 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
           <ul class="treeview-menu">
-            <li class="<?= $t_active?>"><a href="<?= base_url('index.php/tugas')?>"><i class="fa fa-circle-o"></i>Daftar Tugas</a></li>
-            <li class="<?= $tt_active?>"><a href="<?= base_url('index.php/tugas/ttugas')?>"><i class="fa fa-circle-o"></i>Tugas Tuntas</a></li>
-            <li class="<?= $bt_active?>"><a href="<?= base_url('index.php/tugas/btugas')?>"><i class="fa fa-circle-o"></i>Tugas Belum Tuntas</a></li>
+            <li class="<?= $t_active?>"><a href="<?= base_url('tugas')?>"><i class="fa fa-circle-o"></i>Daftar Tugas</a></li>
+            <li class="<?= $tt_active?>"><a href="<?= base_url('tugas/ttugas')?>"><i class="fa fa-circle-o"></i>Tugas Tuntas</a></li>
+            <li class="<?= $bt_active?>"><a href="<?= base_url('tugas/btugas')?>"><i class="fa fa-circle-o"></i>Tugas Belum Tuntas</a></li>
           </ul>
         </li>
        

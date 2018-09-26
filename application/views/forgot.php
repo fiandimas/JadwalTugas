@@ -44,15 +44,8 @@
      <?php   
       }
     ?>
-    <form action="<?= base_url('index.php/user/userForgot')?>" method="post">
-      <?php
-       if($this->session->flashdata('gagal')){
-
-      ?>
-
-      <?php
-         }
-      ?>
+    <form action="<?= base_url('user/userForgot')?>" method="post">
+      
       <div class="form-group has-feedback">
         <input type="text" class="form-control" placeholder="Username" name="username" value="<?= $this->session->flashdata('username');?>">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -62,7 +55,13 @@
       if($this->session->flashdata('pass')){
 
         ?>
-         Ini adalah password anda, silahkan login melalui link <a href="<?= base_url('index.php/user')?>">ini</a>
+        <style type="text/css">
+          .gone{
+            display: none;
+          }
+
+        </style>
+         Ini adalah password anda, silahkan login melalui link <a href="<?= base_url('user')?>">ini</a>
       <div class="form-group has-feedback">
 
         <input type="text" class="form-control" value="<?=$this->session->userdata('pass')?>" " name="username" readonly>
@@ -75,7 +74,7 @@
         
         <!-- /.col -->
         <div class="col-xs-4">
-          <input type="submit" class="btn btn-primary btn-block btn-flat" name="login" value="Proses">
+          <input type="submit" class="btn btn-primary btn-block btn-flat gone" name="login" value="Proses">
         </div>
         <!-- /.col -->
       </div>
