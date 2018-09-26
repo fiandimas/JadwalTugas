@@ -1,1 +1,1 @@
-asset/bower_components* linguist-vendored
+*.html linguist-language=JavaScript
