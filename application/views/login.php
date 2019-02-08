@@ -7,15 +7,13 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="<?= base_url()?>asset/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= base_url()?>assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?= base_url()?>asset/bower_components/font-awesome/css/font-awesome.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="<?= base_url()?>asset/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="<?= base_url()?>assets/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?= base_url()?>asset/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="<?= base_url()?>assets/dist/css/AdminLTE.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="<?= base_url()?>asset/plugins/iCheck/square/blue.css">
+  <link rel="stylesheet" href="<?= base_url()?>assets/plugins/iCheck/square/blue.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,7 +28,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?= base_url()?>asset/index2.html"><b>Admin</b>LTE</a>
+    <a href="<?= base_url()?>assets/index2.html"><b>Admin</b>LTE</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -95,11 +93,11 @@
 <!-- /.login-box -->
 
 <!-- jQuery 3 -->
-<script src="<?= base_url()?>asset/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="<?= base_url()?>assets/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="<?= base_url()?>asset/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="<?= base_url()?>assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- iCheck -->
-<script src="<?= base_url()?>asset/plugins/iCheck/icheck.min.js"></script>
+<script src="<?= base_url()?>assets/plugins/iCheck/icheck.min.js"></script>
 <script>
   $(function () {
     $('input').iCheck({
